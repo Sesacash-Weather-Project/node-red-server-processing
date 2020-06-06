@@ -8,10 +8,11 @@ Here you will find the javascript and HTML code for the "telos-transfer" node as
 
 ## Direct Usage
 
-After downloading this repository, you will need to install the project dependencies. This can be done with:
+You can install the project and all its dependencies in your home .node-red location. This can be done with:
 
 ```
-npm install
+cd $HOME/.node-red
+npm install node-red-contrib-telos-eosio
 ```
 
 You should see a package-lock.json file and a folder called node_modules that includes eosjs libraries for interacting with the blockchain.
@@ -21,5 +22,6 @@ You should see a package-lock.json file and a folder called node_modules that in
 The example flow files require other NPM node-red packages to work properly. Install the twitter API node by doing the following:
 
 ```
+cd $HOME/.node-red
 npm install node-red-node-twitter
 ```
