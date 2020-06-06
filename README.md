@@ -1,3 +1,4 @@
+![Screenshot](images/telos_node_screenshot.png)
 
 # Telos Node-Red NPM Package
 
