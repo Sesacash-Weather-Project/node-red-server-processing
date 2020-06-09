@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-telos-eosio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node-Red node designed to publish data to Telos or a different eosio blockchain",
   "main": "index.js",
   "dependencies": {
