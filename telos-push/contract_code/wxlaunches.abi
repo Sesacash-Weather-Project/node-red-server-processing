@@ -1,0 +1,204 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "addobs",
+            "base": "",
+            "fields": [
+                {
+                    "name": "unix_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "pressure_hpa",
+                    "type": "float32"
+                },
+                {
+                    "name": "temperature_c",
+                    "type": "float32"
+                },
+                {
+                    "name": "relHumidity",
+                    "type": "float32"
+                },
+                {
+                    "name": "dewPoint_c",
+                    "type": "float32"
+                },
+                {
+                    "name": "wind_mph",
+                    "type": "float32"
+                },
+                {
+                    "name": "wind_degrees",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "iotsetlaunch",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lat",
+                    "type": "float32"
+                },
+                {
+                    "name": "lon",
+                    "type": "float32"
+                },
+                {
+                    "name": "pressure",
+                    "type": "float32"
+                },
+                {
+                    "name": "reward_amount",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "launches",
+            "base": "",
+            "fields": [
+                {
+                    "name": "launch_number",
+                    "type": "uint64"
+                },
+                {
+                    "name": "unix_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "miner",
+                    "type": "name"
+                },
+                {
+                    "name": "miner_memo",
+                    "type": "string"
+                },
+                {
+                    "name": "latitude",
+                    "type": "float32"
+                },
+                {
+                    "name": "longitude",
+                    "type": "float32"
+                },
+                {
+                    "name": "surf_pressure_hpa",
+                    "type": "float32"
+                },
+                {
+                    "name": "wxcondition",
+                    "type": "string"
+                },
+                {
+                    "name": "reward_amount",
+                    "type": "uint32"
+                },
+                {
+                    "name": "reward_sent",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "observations",
+            "base": "",
+            "fields": [
+                {
+                    "name": "launch_number",
+                    "type": "uint8"
+                },
+                {
+                    "name": "unix_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "pressure_hpa",
+                    "type": "float32"
+                },
+                {
+                    "name": "temperature_c",
+                    "type": "float32"
+                },
+                {
+                    "name": "relHumidity",
+                    "type": "float32"
+                },
+                {
+                    "name": "dewPoint_c",
+                    "type": "float32"
+                },
+                {
+                    "name": "wind_mph",
+                    "type": "float32"
+                },
+                {
+                    "name": "wind_degrees",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "websetlaunch",
+            "base": "",
+            "fields": [
+                {
+                    "name": "unix_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "miner",
+                    "type": "name"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "wxcondition",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addobs",
+            "type": "addobs",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "iotsetlaunch",
+            "type": "iotsetlaunch",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "websetlaunch",
+            "type": "websetlaunch",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "launches",
+            "type": "launches",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "observations",
+            "type": "observations",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
